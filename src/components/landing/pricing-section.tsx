@@ -19,7 +19,7 @@ export function PricingSection() {
       badge: "Tek Kantar İçin",
       includedStations: 1,
       extraStationAllowed: false,
-      baseMonthlyPrice: 1490,
+      baseMonthlyPrice: 1880,
       description: "Tek kantar istasyonuna sahip bağımsız işletmeler, hafriyat ve taş ocakları için ideal.",
       features: [
         "1 Adet Saha Kantar İstasyonu Lisansı",
@@ -38,12 +38,12 @@ export function PricingSection() {
       badge: "En Çok Tercih Edilen",
       includedStations: 2,
       extraStationAllowed: true,
-      extraStationPrice: 550,
-      baseMonthlyPrice: 2990,
+      extraStationPrice: 650,
+      baseMonthlyPrice: 3400,
       description: "Çoklu kantara, şantiyelere ve dış müşteri sevkiyat portalına ihtiyaç duyan büyüyen firmalar için.",
       features: [
         "2 Adet Saha Kantar İstasyonu Dahil",
-        "İlave İstasyon Eklenebilir (+550 ₺/Ay/İstasyon)",
+        "İlave İstasyon Eklenebilir (+650 ₺/Ay/İstasyon)",
         "Özel Şirket Subdomaini (firma.kolaykantar.com)",
         "7/24 Canlı Müşteri & Kurum Portalı",
         "Malzeme İcmal & Alttoplam Raporları",
@@ -59,12 +59,12 @@ export function PricingSection() {
       badge: "Büyük & Çok Şubeli Şirketler",
       includedStations: 5,
       extraStationAllowed: true,
-      extraStationPrice: 400,
+      extraStationPrice: 450,
       baseMonthlyPrice: 5900,
       description: "Çok şubeli fabrikalar, hazır beton & asfalt tesisleri ve özel ERP/Muhasebe entegrasyonu isteyenler için.",
       features: [
         "5 Adet Saha Kantar İstasyonu Dahil",
-        "Avantajlı İlave İstasyon (+400 ₺/Ay/İstasyon)",
+        "Avantajlı İlave İstasyon (+450 ₺/Ay/İstasyon)",
         "Logo, Mikro, SAP ve Netsis ERP Entegrasyonu",
         "Kamera & Otomatik Plaka Tanıma (LPR) Desteği",
         "Bariyer & Trafik Lambası Otomasyonu",
@@ -77,7 +77,7 @@ export function PricingSection() {
 
   // Profesyonel Paket hesaplama
   const proExtraStations = Math.max(0, stationCount - 2);
-  const proMonthlyTotal = (2990 + proExtraStations * 550) * discountMultiplier;
+  const proMonthlyTotal = (3400 + proExtraStations * 650) * discountMultiplier;
 
   return (
     <section id="pricing" className="py-24 bg-[#060b13] border-t border-slate-800 relative overflow-hidden">
@@ -133,7 +133,7 @@ export function PricingSection() {
         {/* ─── 1. BULUT & SAAS PLANLARI GÖRÜNÜMÜ ───────────────────────────────── */}
         {modelType === "saas" ? (
           <div className="space-y-12 animate-in fade-in zoom-in-95 duration-200">
-            {/* Aylık / Yıllık Toggle & İstasyon Seçici */}
+            {/* Aylık / Yıllık Toggle */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <div className="flex items-center gap-3">
                 <span className={`text-xs font-bold ${billingCycle === "monthly" ? "text-white" : "text-slate-400"}`}>
@@ -298,7 +298,7 @@ export function PricingSection() {
                     </span>
                     <div className="flex items-baseline gap-2">
                       <span className="text-4xl font-black font-mono text-white text-gradient-cyan">
-                        14.900
+                        24.900
                       </span>
                       <span className="text-sm text-slate-300 font-bold">₺ / İstasyon (Tek Seferlik)</span>
                     </div>
@@ -350,7 +350,7 @@ export function PricingSection() {
                   </ul>
 
                   <div className="pt-3 border-t border-slate-800 text-[11px] text-slate-400 leading-relaxed">
-                    💡 <strong>6. Aydan Sonra Güncelleme Modeli:</strong> 6 ayın sonunda yeni sürümleri ve güncellemeleri almaya devam etmek isterseniz yıllık cüzi bir bakım paketi (2.400 ₺/Yıl) alabilirsiniz. Bakım almasanız dahi elinizdeki sürümü ömür boyu sınırsız kullanabilirsiniz.
+                    💡 <strong>6. Aydan Sonra Güncelleme Modeli:</strong> 6 ayın sonunda yeni sürümleri ve güncellemeleri almaya devam etmek isterseniz yıllık cüzi bir bakım paketi (3.600 ₺/Yıl) alabilirsiniz. Bakım almasanız dahi elinizdeki sürümü ömür boyu sınırsız kullanabilirsiniz.
                   </div>
                 </div>
               </div>
