@@ -28,8 +28,9 @@ export const metadata: Metadata = {
     "maden kantar programı",
     "beton santrali tartım",
     "taş ocağı kantar",
+    "zersoft",
   ],
-  authors: [{ name: "Zersoft Yazılım Teknolojileri A.Ş." }],
+  authors: [{ name: "Zersoft Yeni Nesil Teknoloji" }],
   openGraph: {
     title: "KolayKantar ERP | Hibrit Kantar Otomasyonu & Bulut Platformu",
     description:

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Scale, Phone, Mail, MapPin, ShieldCheck, Heart } from "lucide-react";
+import { Scale, Phone, Mail, MapPin, ShieldCheck, Heart, Globe } from "lucide-react";
 
 export function Footer() {
   return (
@@ -20,9 +20,20 @@ export function Footer() {
           <p className="text-slate-400 leading-relaxed max-w-sm">
             Türkiye'nin ilk ve tek <strong>Hibrit Mimariye</strong> sahip kantar otomasyonu ve ERP platformu. İnternet kopsa dahi sahada sıfır kesintiyle tartım alın, bulutla anında senkronize olun.
           </p>
-          <div className="flex items-center gap-2 text-slate-500 text-[11px]">
-            <ShieldCheck className="h-4 w-4 text-emerald-500" />
-            <span>Zersoft Yazılım Teknolojileri A.Ş. Güvencesiyle</span>
+          <div className="flex items-center gap-2 text-slate-400 text-xs">
+            <ShieldCheck className="h-4 w-4 text-emerald-400" />
+            <span>
+              Geliştirici:{" "}
+              <a
+                href="https://zersoft.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-400 font-bold hover:underline inline-flex items-center gap-1"
+              >
+                Zersoft Yeni Nesil Teknoloji
+                <Globe className="h-3 w-3 inline" />
+              </a>
+            </span>
           </div>
         </div>
 
@@ -56,15 +67,19 @@ export function Footer() {
           <ul className="space-y-2.5">
             <li className="flex items-center gap-2">
               <Phone className="h-3.5 w-3.5 text-cyan-400 shrink-0" />
-              <span>0 (850) 300 00 00</span>
+              <a href="tel:+905555879370" className="hover:text-cyan-300 font-mono font-bold">+90 (555) 587 93 70</a>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-3.5 w-3.5 text-cyan-400 shrink-0" />
-              <span>info@kolaykantar.com</span>
+              <a href="mailto:info@zersoft.net" className="hover:text-cyan-300">info@zersoft.net</a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail className="h-3.5 w-3.5 text-cyan-400 shrink-0" />
+              <a href="mailto:info@kolaykantar.com" className="hover:text-cyan-300">info@kolaykantar.com</a>
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="h-3.5 w-3.5 text-cyan-400 shrink-0 mt-0.5" />
-              <span>Teknopark İstanbul / Bursa Nilüfer Ofisi</span>
+              <span>Bursa / Türkiye</span>
             </li>
           </ul>
         </div>
@@ -73,11 +88,12 @@ export function Footer() {
       {/* Alt Telif Satırı */}
       <div className="border-t border-slate-900 bg-[#03060a] py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
-          <p>© {new Date().getFullYear()} KolayKantar.com. Tüm hakları saklıdır.</p>
+          <p>© {new Date().getFullYear()} KolayKantar.com • ZERSOFT Yeni Nesil Teknoloji. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
             <Link href="/gizlilik" className="hover:text-slate-300">Gizlilik Sözleşmesi</Link>
             <Link href="/gizlilik" className="hover:text-slate-300">KVKK Aydınlatma Metni</Link>
             <Link href="/iletisim" className="hover:text-slate-300">İletişim</Link>
+            <a href="https://zersoft.net" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-bold">zersoft.net</a>
           </div>
         </div>
       </div>
