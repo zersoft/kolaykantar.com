@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Scale, Phone, Mail, MapPin, ShieldCheck, Heart, Globe } from "lucide-react";
+import { Phone, Mail, MapPin, ShieldCheck, Globe } from "lucide-react";
+import { BrandLogo } from "@/components/layout/brand-logo";
 
 export function Footer() {
   return (
@@ -7,16 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 md:grid-cols-5 gap-10">
         {/* Kolon 1: Logo & Şirket Bilgisi */}
         <div className="md:col-span-2 space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-indigo-600 p-0.5">
-              <div className="w-full h-full bg-[#070d17] rounded-[6px] flex items-center justify-center">
-                <Scale className="h-4 w-4 text-cyan-400" />
-              </div>
-            </div>
-            <span className="font-extrabold text-lg tracking-tight text-white">
-              KOLAY<span className="text-cyan-400">KANTAR</span> ERP
-            </span>
-          </div>
+          <BrandLogo href="/" size="md" />
           <p className="text-slate-400 leading-relaxed max-w-sm">
             Türkiye'nin ilk ve tek <strong>Hibrit Mimariye</strong> sahip kantar otomasyonu ve ERP platformu. İnternet kopsa dahi sahada sıfır kesintiyle tartım alın, bulutla anında senkronize olun.
           </p>
@@ -44,6 +36,7 @@ export function Footer() {
             <li><Link href="#features" className="hover:text-cyan-400 transition-colors">Kantar Kokpiti</Link></li>
             <li><Link href="#architecture" className="hover:text-cyan-400 transition-colors">Hibrit Offline Motor</Link></li>
             <li><Link href="#portal" className="hover:text-cyan-400 transition-colors">Müşteri Portalı</Link></li>
+            <li><Link href="#efficiency" className="hover:text-cyan-400 transition-colors">Hız & Verimlilik</Link></li>
             <li><Link href="#pricing" className="hover:text-cyan-400 transition-colors">Fiyatlandırma</Link></li>
             <li><Link href="#demo" className="hover:text-cyan-400 transition-colors">Canlı Demo</Link></li>
           </ul>

@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Scale, ArrowRight, Menu, X, Sparkles } from "lucide-react";
+import { ArrowRight, Menu, X, Sparkles } from "lucide-react";
+import { BrandLogo } from "@/components/layout/brand-logo";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,27 +26,8 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 via-sky-500 to-indigo-600 p-0.5 shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform duration-300">
-            <div className="w-full h-full bg-[#070d17] rounded-[10px] flex items-center justify-center">
-              <Scale className="h-5 w-5 text-cyan-400 group-hover:text-white transition-colors" />
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <div className="flex items-center gap-1.5">
-              <span className="font-extrabold text-xl tracking-tight text-white font-display">
-                KOLAY<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-400">KANTAR</span>
-              </span>
-              <span className="text-[10px] font-black uppercase tracking-wider bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-1.5 py-0.5 rounded shadow-sm">
-                ERP
-              </span>
-            </div>
-            <span className="text-[9px] font-semibold text-slate-400 tracking-wider">
-              HİBRİT KANTAR OTOMASYONU
-            </span>
-          </div>
-        </Link>
+        {/* Resmi KolayKantar ERP Brand Logo */}
+        <BrandLogo href="/" size="md" />
 
         {/* Masaüstü Navigasyon */}
         <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-300">

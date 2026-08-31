@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="KolayKantar Mark">
+  <defs>
+    <linearGradient id="kkLoopG1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="kkPlatG1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <filter id="kkGlow4" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Kalkan / Arka Plan Kutusu -->
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="#070c15" stroke="rgba(14,165,233,0.35)" stroke-width="1.2"/>
+
+  <!-- ── 1. Kesintisiz Otomasyon Döngüsü & Tartım Kefeleri (Infinity Scale Loop) ── -->
+  <path d="M17 18 C12 18 9 21.5 9 25 C9 28.5 12 32 17 32 C21.5 32 24 27.5 24 25 C24 22.5 26.5 18 31 18 C36 18 39 21.5 39 25 C39 28.5 36 32 31 32 C26.5 32 24 27.5 24 25"
+        fill="none"
+        stroke="url(#kkLoopG1)"
+        stroke-width="2.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- ── 2. Kantar Platform Tabanı & Yük Hücreleri (Heavy Duty Base Bar) ── -->
+  <path d="M11 38 L37 38" stroke="url(#kkPlatG1)" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="15" cy="40.5" r="1.2" fill="#38bdf8"/>
+  <circle cx="33" cy="40.5" r="1.2" fill="#38bdf8"/>
+
+  <!-- ── 3. Zersoft Merkez Odak Noktası (Precision Convergence Core) ── -->
+  <circle cx="24" cy="25" r="2.8" fill="#00f2fe" filter="url(#kkGlow4)"/>
+  <circle cx="24" cy="25" r="1.2" fill="#ffffff"/>
+</svg>
