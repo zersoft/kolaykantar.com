@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Scale, ArrowRight, Menu, X, Shield, Cpu, Layers, Building2, PhoneCall, Sparkles } from "lucide-react";
+import { Scale, ArrowRight, Menu, X, Sparkles } from "lucide-react";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,7 +48,7 @@ export function Navbar() {
         </Link>
 
         {/* Masaüstü Navigasyon */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+        <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-300">
           <Link href="#features" className="hover:text-cyan-400 transition-colors">
             Özellikler
           </Link>
@@ -58,11 +58,11 @@ export function Navbar() {
           <Link href="#portal" className="hover:text-cyan-400 transition-colors">
             Müşteri Portalı
           </Link>
+          <Link href="#efficiency" className="hover:text-cyan-400 transition-colors">
+            Hız & Verimlilik
+          </Link>
           <Link href="#sectors" className="hover:text-cyan-400 transition-colors">
             Sektörler
-          </Link>
-          <Link href="#calculator" className="hover:text-cyan-400 transition-colors">
-            Tasarruf Hesapla
           </Link>
           <Link href="#pricing" className="hover:text-cyan-400 transition-colors">
             Fiyatlandırma
@@ -110,11 +110,11 @@ export function Navbar() {
             <Link href="#portal" onClick={() => setMobileMenuOpen(false)} className="hover:text-cyan-400 py-1">
               Müşteri Portalı
             </Link>
+            <Link href="#efficiency" onClick={() => setMobileMenuOpen(false)} className="hover:text-cyan-400 py-1">
+              Hız & Verimlilik
+            </Link>
             <Link href="#sectors" onClick={() => setMobileMenuOpen(false)} className="hover:text-cyan-400 py-1">
               Sektörler
-            </Link>
-            <Link href="#calculator" onClick={() => setMobileMenuOpen(false)} className="hover:text-cyan-400 py-1">
-              Tasarruf Hesapla
             </Link>
             <Link href="#pricing" onClick={() => setMobileMenuOpen(false)} className="hover:text-cyan-400 py-1">
               Fiyatlandırma
