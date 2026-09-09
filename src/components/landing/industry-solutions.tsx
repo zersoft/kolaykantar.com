@@ -1,4 +1,4 @@
-import { Mountain, Flame, Recycle, Wheat, Container, HardHat } from "lucide-react";
+import { Mountain, Flame, Recycle, Wheat, Container, HardHat, Hospital, Factory } from "lucide-react";
 
 export function IndustrySolutions() {
   const industries = [
@@ -11,6 +11,11 @@ export function IndustrySolutions() {
       icon: Flame,
       title: "Asfalt & Hazır Beton Tesisleri",
       description: "Agrega, bitüm ve çimento sevkiyatlarında hassas tartım, müşteri sözleşmeli fiyat listeleri ve sevk irsaliyeleri.",
+    },
+    {
+      icon: Hospital,
+      title: "Hastaneler & Tıbbi Atık Yönetimi",
+      description: "Poliklinik ve servis bazlı atık tartımı, 50x55 mm termal barkod etiketleme, hızlı dara ön tanımları, resmi tutanak dökümü ve HBYS entegrasyonu.",
     },
     {
       icon: Recycle,
@@ -32,6 +37,11 @@ export function IndustrySolutions() {
       title: "İnşaat & Altyapı Projeleri",
       description: "Hafriyat döküm sahaları, dolgu malzemesi kontrolleri ve alt yüklenici nakliye sefer takip dökümleri.",
     },
+    {
+      icon: Factory,
+      title: "Sanayi & Üretim Tesisleri",
+      description: "Hammadde giriş ve mamul sevk tartımları, çoklu kaynak firma (grup şirketleri) yönetimi ve ERP entegrasyonu.",
+    },
   ];
 
   return (
@@ -46,7 +56,7 @@ export function IndustrySolutions() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {industries.map((ind, idx) => {
             const Icon = ind.icon;
             return (

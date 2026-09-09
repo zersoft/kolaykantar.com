@@ -54,8 +54,9 @@ export function Navbar() {
         {/* Aksiyon Butonları */}
         <div className="hidden lg:flex items-center gap-3">
           <Link
-            href="http://localhost:3100/login"
+            href="https://app.kolaykantar.com/"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-xs font-bold text-slate-300 hover:text-white px-3.5 py-2 rounded-lg border border-slate-700 hover:border-slate-500 hover:bg-slate-800/60 transition-all"
           >
             SaaS Girişi
@@ -104,8 +105,10 @@ export function Navbar() {
           </nav>
           <div className="pt-4 border-t border-slate-800 flex flex-col gap-2.5">
             <Link
-              href="http://localhost:3100/login"
-              className="text-center text-xs font-bold text-slate-200 py-2.5 rounded-lg border border-slate-700 bg-slate-800/60"
+              href="https://app.kolaykantar.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center text-xs font-bold text-slate-200 py-2.5 rounded-lg border border-slate-700 bg-slate-800/60 hover:bg-slate-700/60"
             >
               SaaS Girişi
             </Link>

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --port 3200",
     "build": "next build",
+    "build:static": "next build && cd out && zip -r -q ../kolaykantar-static-deploy.zip . -x \"*.DS_Store*\"",
     "start": "next start --port 3200",
     "lint": "next lint"
   },

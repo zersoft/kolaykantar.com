@@ -1,41 +1,71 @@
-import { Scale, Building2, Truck, ShieldCheck, FileSpreadsheet, Keyboard, Layers, Bell, Cloud, Zap, Camera, Lock } from "lucide-react";
+import {
+  Scale,
+  Building2,
+  Truck,
+  ShieldCheck,
+  FileSpreadsheet,
+  Keyboard,
+  Barcode,
+  UploadCloud,
+  Server,
+  Layers,
+  Sparkles,
+} from "lucide-react";
 
 export function FeaturesGrid() {
   const features = [
     {
       icon: Scale,
       title: "Kantar Kokpit Otomasyonu",
-      description: "Seri port (RS232/USB) indikatör bağlantısı, tek tıkla kilo alma, kayıtlı dara ve kantar darası yönetimi.",
+      description: "Seri port (RS232/USB/TCP-IP) indikatör bağlantısı, tek tıkla kilo alma, kayıtlı dara ve kantar darası yönetimi.",
       color: "text-cyan-400 bg-cyan-500/10 border-cyan-500/30",
+    },
+    {
+      icon: Barcode,
+      title: "Tıbbi Atık Kokpiti & HBYS Entegrasyonu",
+      description: "50x55 mm termal barkod etiket baskısı, hızlı dara butonları (Siyah Poşet 0.040 kg), poliklinik ve resmi tutanak dökümü.",
+      color: "text-rose-400 bg-rose-500/10 border-rose-500/30",
+    },
+    {
+      icon: UploadCloud,
+      title: "MDB & Eski Kantar Veri Aktarımı",
+      description: "Eski kantar yazılımlarından (.mdb, Access, Excel, DBF) 500 MB'a kadar verileri 4MB chunked asenkron motorla tek tıkla buluta aktarma.",
+      color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+    },
+    {
+      icon: Server,
+      title: "İzole Neon DB Veritabanı (Multi-DB)",
+      description: "Her müşteriye özel bağımsız PostgreSQL / Neon DB tahsisi, dinamik tenant routing ve %100 fiziksel/mantıksal veri güvenliği.",
+      color: "text-indigo-400 bg-indigo-500/10 border-indigo-500/30",
+    },
+    {
+      icon: Building2,
+      title: "Kaynak Firma & Çoklu Şirket Yönetimi",
+      description: "Aynı kantarda birden fazla grup şirketi adına ayrı fiş, irsaliye, fatura başlığı ve kantar/üretim takip ayrımı.",
+      color: "text-sky-400 bg-sky-500/10 border-sky-500/30",
+    },
+    {
+      icon: Truck,
+      title: "Dış Müşteri & Nakliyeci Portalı",
+      description: "Müşterilerinizin kendi sevkiyatlarını, malzeme tonaj dökümlerini ve tartım fişlerini anlık görebileceği 7/24 portal.",
+      color: "text-teal-400 bg-teal-500/10 border-teal-500/30",
     },
     {
       icon: Keyboard,
       title: "Hızlı Klavye Kısayolları (F1-F12)",
-      description: "Saha operatörlerinin fare kullanmadan saniyeler içinde tartım yapmasını sağlayan seri kısayol tuşları.",
-      color: "text-sky-400 bg-sky-500/10 border-sky-500/30",
-    },
-    {
-      icon: Building2,
-      title: "Çok Kiracılı SaaS (Multi-Tenant)",
-      description: "Her şirkete özel alt alan adı (örn: sirket.kolaykantar.com) ile tamamen izole veri tabanı ve yetkilendirme.",
-      color: "text-indigo-400 bg-indigo-500/10 border-indigo-500/30",
-    },
-    {
-      icon: Truck,
-      title: "Dış Müşteri & Kurum Portalı",
-      description: "Müşterilerinizin kendi sevkiyatlarını, malzeme tonaj dökümlerini ve tartım fişlerini anlık görebileceği portal.",
-      color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+      description: "Saha operatörlerinin fare kullanmadan saniyeler içinde seri tartım yapmasını sağlayan ergonomik kısayol motoru.",
+      color: "text-amber-400 bg-amber-500/10 border-amber-500/30",
     },
     {
       icon: FileSpreadsheet,
       title: "Malzeme İcmal & Alttoplam Raporu",
       description: "Malzeme bazında gruplanmış sefer adedi, brüt/dara/net tonajlar ve tek tıkla Excel (CSV) dışa aktarımı.",
-      color: "text-amber-400 bg-amber-500/10 border-amber-500/30",
+      color: "text-blue-400 bg-blue-500/10 border-blue-500/30",
     },
     {
       icon: ShieldCheck,
-      title: "Rol Bazlı Güvenlik & İzolasyon",
-      description: "Operatör, Müdür, Muhasebe ve Dış Müşteri seviyelerinde hassas yetkilendirme ile finansal gizlilik.",
+      title: "Rol Bazlı 9 Seviyeli Güvenlik",
+      description: "Operatör, Şantiye Şefi, Saha Koordinatörü, Muhasebe ve Yönetici seviyelerinde hassas yetkilendirme ile tam gizlilik.",
       color: "text-purple-400 bg-purple-500/10 border-purple-500/30",
     },
   ];

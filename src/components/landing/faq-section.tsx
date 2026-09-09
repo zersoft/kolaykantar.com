@@ -8,16 +8,28 @@ export function FaqSection() {
 
   const faqs = [
     {
+      q: "Eski kantar programımızdaki (.mdb / Access / Excel) verileri aktarabilir miyiz?",
+      a: "Kesinlikle evet! KolayKantar'ın gelişmiş MDB & Veri Aktarım Sihirbazı sayesinde, eski kantar yazılımlarınızın veritabanı dosyalarını (.mdb, Access, DBF, Excel) 500 MB'a kadar asenkron motorla tek tıkla yükleyebilirsiniz. Geçmiş yıllara ait tüm tartım fişleriniz, cari hesaplarınız, araç plakalarınız ve dara geçmişiniz sıfır veri kaybıyla yeni sisteme aktarılır.",
+    },
+    {
+      q: "Hastaneler için tıbbi atık tartımı ve HBYS entegrasyonu nasıl çalışır?",
+      a: "KolayKantar Sağlık Kokpiti; poliklinik ve servis bazlı tıbbi atık tartımlarını doğrudan barkodlu termal yazıcıya (50x55 mm) iletir. Siyah poşet (0.040 kg) ve konteynerler için hızlı dara tuşları, ulusal atık kodları (EWC) ve resmi çift imzalı teslim tutanakları eksiksiz üretilir. HBYS altyapılarıyla tam entegre çalışır.",
+    },
+    {
+      q: "Aynı sahada birden fazla şirketimiz var, tek kantardan farklı firmalar adına fiş kesebilir miyiz?",
+      a: "Evet. 'Kaynak Firma (SellerEntity)' mimarimiz sayesinde aynı kantar istasyonundan birden fazla grup şirketi veya tüzel kişilik seçilebilir. Her firmanın kendine ait fiş şablonu, fatura unvanı, logo ve resmi irsaliye serisi bağımsız olarak basılır.",
+    },
+    {
+      q: "Verilerimiz nerede saklanıyor ve diğer firmalardan nasıl izole ediliyor?",
+      a: "KolayKantar, her müşteriye bağımsız PostgreSQL (Neon DB) veritabanı tahsis eden dinamik 'Database-per-Tenant' mimarisi kullanır. Şirket verileriniz diğer firmaların veritabanlarıyla asla karışmaz, fiziksel ve mantıksal olarak %100 izoledir.",
+    },
+    {
       q: "İnternet kesildiğinde tartım almaya devam edebilir miyiz?",
       a: "Evet! KolayKantar'ın yerel masaüstü istemcisi tüm verileri yerel SQLite veritabanında tutar. İnternet kesilse bile operatör tartım alır, daraları çözer ve fiş basar. İnternet geldiğinde kayıtlar otomatik olarak bulut veritabanına aktarılır.",
     },
     {
       q: "Hangi kantar indikatörleri ve markaları ile uyumludur?",
-      a: "Tunçmatik, Baykon, Esit, Dini Argeo, Keli, Yaohua, Sartorius ve standart RS232 / USB / TCP-IP protokolü kullanan tüm yerli ve yabancı indikatör modelleriyle %100 uyumludur.",
-    },
-    {
-      q: "Mevcut carilerimizi ve araç daralarımızı sisteme aktarabilir miyiz?",
-      a: "Evet. Excel dosyanızdaki tüm müşteri, şantiye, araç plakası ve malzeme listelerini tek tıkla sisteme aktarabilmeniz için hazır içe aktarma sihirbazı sunuyoruz.",
+      a: "Tunahan, Baykon, Esit, Dini Argeo, Keli, Yaohua, Sartorius ve standart RS232 / USB / TCP-IP protokolü kullanan tüm yerli ve yabancı indikatör modelleriyle %100 uyumludur.",
     },
     {
       q: "Müşteri Portalı nedir ve müşterilerimiz nasıl giriş yapar?",

@@ -33,6 +33,7 @@ export function Footer() {
         <div className="space-y-3">
           <h4 className="text-slate-200 font-bold text-sm tracking-wider uppercase">Ürün</h4>
           <ul className="space-y-2">
+            <li><a href="https://app.kolaykantar.com/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 font-semibold hover:underline">SaaS Girişi</a></li>
             <li><Link href="#features" className="hover:text-cyan-400 transition-colors">Kantar Kokpiti</Link></li>
             <li><Link href="#architecture" className="hover:text-cyan-400 transition-colors">Hibrit Offline Motor</Link></li>
             <li><Link href="#portal" className="hover:text-cyan-400 transition-colors">Müşteri Portalı</Link></li>
@@ -49,6 +50,7 @@ export function Footer() {
             <li><Link href="#sectors" className="hover:text-cyan-400 transition-colors">Maden & Taş Ocakları</Link></li>
             <li><Link href="#sectors" className="hover:text-cyan-400 transition-colors">Asfalt & Hazır Beton</Link></li>
             <li><Link href="#sectors" className="hover:text-cyan-400 transition-colors">Geri Dönüşüm & Hurda</Link></li>
+            <li><Link href="#sectors" className="hover:text-cyan-400 transition-colors">Hastaneler & Tıbbi Atık</Link></li>
             <li><Link href="#sectors" className="hover:text-cyan-400 transition-colors">Tarım & Hububat</Link></li>
             <li><Link href="#sectors" className="hover:text-cyan-400 transition-colors">Lojistik & Antrepo</Link></li>
           </ul>
