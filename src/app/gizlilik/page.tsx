@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gizlilik Sözleşmesi & KVKK Aydınlatma Metni | KolayKantar ERP",
+  description:
+    "KolayKantar ERP veri güvenliği, KVKK aydınlatma metni ve gizlilik politikası. Zersoft Yeni Nesil Teknoloji güvencesiyle verileriniz izole ve güvende.",
+  alternates: {
+    canonical: "/gizlilik",
+  },
+};
+
 export default function PrivacyPage() {
   return (
     <div className="pt-32 pb-20 max-w-4xl mx-auto px-4 text-slate-700 dark:text-slate-300 space-y-6 text-sm">
