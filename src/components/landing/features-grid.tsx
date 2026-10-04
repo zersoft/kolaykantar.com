@@ -71,13 +71,13 @@ export function FeaturesGrid() {
   ];
 
   return (
-    <section id="features" className="py-24 bg-[#060b13] relative">
+    <section id="features" className="py-24 bg-slate-50 dark:bg-[#060b13] relative transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white font-display tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 dark:text-white font-display tracking-tight">
             A'dan Z'ye Eksiksiz Kantar & ERP Özellikleri
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
             Saha operasyonlarının zorlu koşullarına dayanacak şekilde tasarlanmış, hız ve güvenliği merkezine alan çözümler.
           </p>
         </div>
@@ -88,13 +88,13 @@ export function FeaturesGrid() {
             return (
               <div
                 key={idx}
-                className="glass-card glass-card-hover p-7 rounded-2xl border border-slate-800 space-y-3.5 relative"
+                className="glass-card glass-card-hover p-7 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-3.5 relative"
               >
                 <div className={`w-11 h-11 rounded-xl flex items-center justify-center border ${f.color}`}>
                   <Icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-base font-bold text-white">{f.title}</h3>
-                <p className="text-xs text-slate-400 leading-relaxed">{f.description}</p>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">{f.title}</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">{f.description}</p>
               </div>
             );
           })}

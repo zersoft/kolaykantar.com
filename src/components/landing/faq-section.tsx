@@ -42,14 +42,14 @@ export function FaqSection() {
   ];
 
   return (
-    <section className="py-24 bg-[#080e18] border-t border-slate-800">
+    <section className="py-24 bg-slate-50/60 dark:bg-[#080e18] border-t border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-xs font-bold text-slate-300">
-            <HelpCircle className="h-3.5 w-3.5 text-cyan-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-200/60 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-bold text-slate-700 dark:text-slate-300">
+            <HelpCircle className="h-3.5 w-3.5 text-cyan-600 dark:text-cyan-400" />
             <span>Merak Edilenler</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-white font-display tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white font-display tracking-tight">
             Sıkça Sorulan Sorular
           </h2>
         </div>
@@ -60,18 +60,18 @@ export function FaqSection() {
             return (
               <div
                 key={idx}
-                className="glass-card rounded-2xl border border-slate-800 overflow-hidden transition-all"
+                className="glass-card rounded-2xl border border-slate-200/80 dark:border-slate-800 overflow-hidden transition-all shadow-sm"
               >
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
-                  className="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm text-white hover:text-cyan-400 transition-colors"
+                  className="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm text-slate-900 dark:text-white hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
                 >
                   <span>{faq.q}</span>
-                  <ChevronDown className={`h-4 w-4 text-cyan-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+                  <ChevronDown className={`h-4 w-4 text-cyan-600 dark:text-cyan-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-5 text-xs text-slate-400 leading-relaxed border-t border-slate-800/80 pt-3">
+                  <div className="px-5 pb-5 text-xs text-slate-600 dark:text-slate-400 leading-relaxed border-t border-slate-100 dark:border-slate-800/80 pt-3">
                     {faq.a}
                   </div>
                 )}

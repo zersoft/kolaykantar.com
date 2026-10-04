@@ -89,18 +89,18 @@ export function BrandLogo({
       {variant === "full" && (
         <div className="flex flex-col leading-none">
           <div className="flex items-center tracking-tight font-black font-display">
-            <span className="text-white text-xl">KOLAY</span>
-            <span className="text-cyan-400 text-xl">KANTAR</span>
-            <span className="ml-1.5 px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-300 font-extrabold text-[10px] tracking-wider border border-cyan-500/30">
+            <span className="text-slate-900 dark:text-white text-xl">KOLAY</span>
+            <span className="text-cyan-600 dark:text-cyan-400 text-xl">KANTAR</span>
+            <span className="ml-1.5 px-1.5 py-0.5 rounded bg-cyan-100 text-cyan-800 dark:bg-cyan-950/80 dark:text-cyan-300 font-extrabold text-[10px] tracking-wider border border-cyan-300 dark:border-cyan-500/30">
               ERP
             </span>
           </div>
 
           {showSubtitle && (
-            <div className="text-[9px] font-semibold tracking-wider text-slate-400 mt-1 flex items-center gap-1 uppercase">
+            <div className="text-[9px] font-semibold tracking-wider text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1 uppercase">
               <span>HİBRİT OTOMASYON</span>
-              <span className="text-slate-600">•</span>
-              <span className="text-cyan-400 font-bold">ZERSOFT</span>
+              <span className="text-slate-400 dark:text-slate-600">•</span>
+              <span className="text-cyan-600 dark:text-cyan-400 font-bold">ZERSOFT</span>
             </div>
           )}
         </div>

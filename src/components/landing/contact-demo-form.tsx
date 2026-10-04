@@ -21,23 +21,23 @@ export function ContactDemoForm() {
   };
 
   return (
-    <section id="demo" className="py-24 bg-[#060b13] border-t border-slate-800 relative">
+    <section id="demo" className="py-24 bg-white dark:bg-[#060b13] border-t border-slate-200 dark:border-slate-800 relative transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto glass-card rounded-3xl p-8 md:p-12 border border-slate-700 shadow-2xl relative overflow-hidden">
+        <div className="max-w-4xl mx-auto glass-card rounded-3xl p-8 md:p-12 border border-slate-200 dark:border-slate-700 shadow-2xl relative overflow-hidden">
           {/* Arka Plan Glow */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 blur-[100px] pointer-events-none" />
 
           {!submitted ? (
             <div className="space-y-8 relative z-10">
               <div className="text-center space-y-3">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-bold border border-cyan-500/30">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 text-xs font-bold border border-cyan-500/30">
                   <Sparkles className="h-3.5 w-3.5" />
                   <span>15 Dakikada Canlı Online Tanıtım</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-black text-white font-display tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white font-display tracking-tight">
                   Ücretsiz Canlı Demo ve Fiyat Teklifi Alın
                 </h2>
-                <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
+                <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
                   Uzman ekibimiz işletmenizin kantar yapısını incelesin, firmanıza özel demo ortamını hemen hazırlasın.
                 </p>
               </div>
@@ -45,62 +45,62 @@ export function ContactDemoForm() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-xs font-bold text-slate-300 block mb-1">Şirket / Firma Unvanı *</label>
+                    <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block mb-1">Şirket / Firma Unvanı *</label>
                     <input
                       type="text"
                       required
                       placeholder="Örn: ABC Madencilik A.Ş."
                       value={formData.companyName}
                       onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                      className="w-full bg-[#0a1422] border border-slate-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-50 dark:bg-[#0a1422] border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                     />
                   </div>
 
                   <div>
-                    <label className="text-xs font-bold text-slate-300 block mb-1">Yetkili Adı Soyadı *</label>
+                    <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block mb-1">Yetkili Adı Soyadı *</label>
                     <input
                       type="text"
                       required
                       placeholder="Örn: Ahmet Yılmaz"
                       value={formData.contactName}
                       onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
-                      className="w-full bg-[#0a1422] border border-slate-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-50 dark:bg-[#0a1422] border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-xs font-bold text-slate-300 block mb-1">Telefon Numarası *</label>
+                    <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block mb-1">Telefon Numarası *</label>
                     <input
                       type="tel"
                       required
                       placeholder="05XX XXX XX XX"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full bg-[#0a1422] border border-slate-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-50 dark:bg-[#0a1422] border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                     />
                   </div>
 
                   <div>
-                    <label className="text-xs font-bold text-slate-300 block mb-1">E-Posta Adresi</label>
+                    <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block mb-1">E-Posta Adresi</label>
                     <input
                       type="email"
                       placeholder="ahmet@sirket.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full bg-[#0a1422] border border-slate-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-50 dark:bg-[#0a1422] border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-xs font-bold text-slate-300 block mb-1">Faaliyet Sektörü</label>
+                    <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block mb-1">Faaliyet Sektörü</label>
                     <select
                       value={formData.sector}
                       onChange={(e) => setFormData({ ...formData, sector: e.target.value })}
-                      className="w-full bg-[#0a1422] border border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-200 focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-50 dark:bg-[#0a1422] border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-800 dark:text-slate-200 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                     >
                       <option value="Maden / Taş Ocağı">Maden & Taş Ocağı</option>
                       <option value="Asfalt / Hazır Beton">Asfalt & Hazır Beton</option>
@@ -112,11 +112,11 @@ export function ContactDemoForm() {
                   </div>
 
                   <div>
-                    <label className="text-xs font-bold text-slate-300 block mb-1">Kantar Sayısı</label>
+                    <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block mb-1">Kantar Sayısı</label>
                     <select
                       value={formData.scaleCount}
                       onChange={(e) => setFormData({ ...formData, scaleCount: e.target.value })}
-                      className="w-full bg-[#0a1422] border border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-200 focus:outline-none focus:border-cyan-400"
+                      className="w-full bg-slate-50 dark:bg-[#0a1422] border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-800 dark:text-slate-200 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                     >
                       <option value="1">1 İstasyon</option>
                       <option value="2-3">2 - 3 İstasyon</option>
@@ -127,13 +127,13 @@ export function ContactDemoForm() {
                 </div>
 
                 <div>
-                  <label className="text-xs font-bold text-slate-300 block mb-1">Eklemek İstediğiniz Not veya İhtiyaç</label>
+                  <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block mb-1">Eklemek İstediğiniz Not veya İhtiyaç</label>
                   <textarea
                     rows={3}
                     placeholder="Kullandığınız indikatör markası veya özel entegrasyon talebiniz..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full bg-[#0a1422] border border-slate-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-cyan-400"
+                    className="w-full bg-slate-50 dark:bg-[#0a1422] border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-xs text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
                   />
                 </div>
 
@@ -153,8 +153,8 @@ export function ContactDemoForm() {
               <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto border border-emerald-500/30">
                 <CheckCircle2 className="h-8 w-8" />
               </div>
-              <h3 className="text-2xl font-bold text-white">Talebiniz Başarıyla Alındı!</h3>
-              <p className="text-xs text-slate-300 max-w-md mx-auto leading-relaxed">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Talebiniz Başarıyla Alındı!</h3>
+              <p className="text-xs text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
                 Teşekkür ederiz. Müşteri temsilcimiz <strong>{formData.phone}</strong> numarasından sizinle en kısa sürede iletişime geçerek canlı demo sunumunu organize edecektir.
               </p>
             </div>

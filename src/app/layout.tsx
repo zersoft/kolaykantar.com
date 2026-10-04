@@ -14,6 +14,8 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 
+import { ThemeProvider } from "@/components/theme-provider";
+
 export const metadata: Metadata = {
   title: "KolayKantar ERP | Yeni Nesil Hibrit Kantar Otomasyonu & Bulut Platformu",
   description:
@@ -56,17 +58,27 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="scroll-smooth">
-      <body className={`${inter.variable} ${outfit.variable} antialiased bg-[#060b13] text-slate-100 min-h-screen flex flex-col`}>
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html lang="tr" className="scroll-smooth" suppressHydrationWarning>
+      <body
+        className={`${inter.variable} ${outfit.variable} antialiased bg-[#f8fafc] dark:bg-[#060b13] text-slate-900 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange={false}
+        >
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
