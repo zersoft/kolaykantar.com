@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 md:grid-cols-5 gap-10">
         {/* Kolon 1: Logo & Şirket Bilgisi */}
         <div className="md:col-span-2 space-y-4">
-          <BrandLogo href="/" size="md" />
+          <BrandLogo href="/" size="md" onDark={true} />
           <p className="text-slate-400 leading-relaxed max-w-sm">
             Türkiye'nin ilk ve tek <strong>Hibrit Mimariye</strong> sahip kantar otomasyonu ve ERP platformu. İnternet kopsa dahi sahada sıfır kesintiyle tartım alın, bulutla anında senkronize olun.
           </p>
