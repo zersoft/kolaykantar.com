@@ -15,49 +15,95 @@ const outfit = Outfit({
 });
 
 import { ThemeProvider } from "@/components/theme-provider";
+import { SchemaOrg } from "@/components/seo/schema-org";
+import { QuickContactFab } from "@/components/layout/quick-contact-fab";
 
 export const metadata: Metadata = {
-  title: "KolayKantar ERP | Yeni Nesil Hibrit Kantar Otomasyonu & Bulut Platformu",
+  metadataBase: new URL("https://kolaykantar.com"),
+  title: "KolayKantar ERP | Taşıt & Tır Kantarı Otomasyonu, Çevrimdışı Tartım Yazılımı",
   description:
-    "İnternet kesilse bile çalışan çevrimdışı masaüstü tartım yazılımı, çok kiracılı bulut ERP senkronizasyonu ve 7/24 canlı müşteri sevkiyat portali. Tüm indikatörlerle tam uyumlu.",
+    "İnternet kesintisinde sıfır kesintiyle çalışan masaüstü tartım yazılımı, çok kiracılı bulut ERP ve 7/24 müşteri sevkiyat portali. Baykon, Tunahan, Esit indikatörleriyle %100 uyumlu. Ücretsiz canlı demo.",
   keywords: [
-    "kantar otomasyonu",
     "kantar programı",
+    "kantar otomasyonu",
+    "tır kantarı programı",
     "kantar yazılımı",
-    "hibrit kantar",
-    "offline kantar",
-    "müşteri portali",
-    "maden kantar programı",
-    "beton santrali tartım",
-    "taş ocağı kantar",
-    "zersoft",
+    "kantar tartım sistemi",
+    "taşıt kantarı otomasyonu",
+    "hibrit kantar programı",
+    "offline kantar yazılımı",
+    "çevrimdışı kantar sistemi",
+    "kantar fişi programı",
+    "müşteri kantar portali",
+    "maden kantar otomasyonu",
+    "hazır beton kantar programı",
+    "taş ocağı kantar yazılımı",
+    "tıbbi atık kantar otomasyonu",
+    "hbys kantar entegrasyonu",
+    "baykon kantar programı",
+    "tunahan indikatör yazılımı",
+    "esit kantar programı",
+    "rs232 kantar okuma",
+    "kantar e-irsaliye programı",
+    "zersoft kantar",
+    "kolay kantar",
   ],
-  authors: [{ name: "Zersoft Yeni Nesil Teknoloji" }],
+  alternates: {
+    canonical: "/",
+  },
+  authors: [{ name: "Zersoft Yeni Nesil Teknoloji", url: "https://zersoft.net" }],
+  creator: "Zersoft Yeni Nesil Teknoloji",
+  publisher: "Zersoft Yeni Nesil Teknoloji",
+  formatDetection: {
+    telephone: true,
+    address: true,
+    email: true,
+  },
   openGraph: {
-    title: "KolayKantar ERP | Hibrit Kantar Otomasyonu & Bulut Platformu",
+    title: "KolayKantar ERP | Yeni Nesil Kantar Otomasyonu & Bulut Platformu",
     description:
-      "Sıfır kesintili çevrimdışı kantar otomasyonu, anlık bulut ERP ve müşteri portali.",
+      "İnternet kesilse dahi durmayan çevrimdışı masaüstü motoru, anlık bulut ERP ve 7/24 canlı müşteri sevkiyat portali.",
     url: "https://kolaykantar.com",
     siteName: "KolayKantar ERP",
     locale: "tr_TR",
     type: "website",
+    images: [
+      {
+        url: "/brand/logo-dark.svg",
+        width: 1200,
+        height: 630,
+        alt: "KolayKantar ERP — Hibrit Kantar Otomasyonu",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KolayKantar ERP | Taşıt & Tır Kantarı Otomasyonu",
+    description:
+      "Sıfır kesintili çevrimdışı kantar otomasyonu, anlık bulut ERP ve müşteri portali.",
+    images: ["/brand/logo-dark.svg"],
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
       { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/favicon.svg",
     apple: "/apple-touch-icon.png",
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -78,6 +124,8 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <QuickContactFab />
+          <SchemaOrg />
         </ThemeProvider>
       </body>
     </html>

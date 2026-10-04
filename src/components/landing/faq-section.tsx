@@ -36,6 +36,14 @@ export function FaqSection() {
       a: "Müşterilerinize özel bir kullanıcı adı ve şifre tanımlayabilirsiniz. Müşteriniz yalnızca kendi firmasına ait malzeme alımlarını, araç seferlerini ve tartım fişlerini 7/24 telefonundan veya bilgisayarından izleyebilir.",
     },
     {
+      q: "Mevcut kantar donanımımızı veya indikatörümüzü değiştirmemiz gerekir mi?",
+      a: "Hayır. KolayKantar, piyasadaki mevcut tüm tartım terminalleri (Baykon, Tunahan, Esit, Dini Argeo, Sartorius vb.) ile RS232, USB veya TCP-IP ağı üzerinden doğrudan haberleşir. Hiçbir ek indikatör veya donanım yatırımı yapmadan dakikalar içinde devreye alabilirsiniz.",
+    },
+    {
+      q: "Kurulum ve operatör eğitimi ne kadar sürer?",
+      a: "Uzaktan bağlantıyla kurulum ve operatör eğitimi ortalama 30-45 dakika içinde tamamlanır. Saha operatörünüz aynı gün içinde tartım almaya başlayabilir. Talep edilmesi halinde Türkiye genelinde yerinde saha devreye alma ve donanım kalibrasyon desteği sağlanmaktadır.",
+    },
+    {
       q: "Logo, Mikro veya SAP gibi muhasebe yazılımlarına veri aktarılabilir mi?",
       a: "Evet. Enterprise paketimizde veya API entegrasyonumuzla tartım ve irsaliye kayıtları doğrudan muhasebe/ERP sisteminize fatura veya irsaliye olarak aktarılabilir.",
     },

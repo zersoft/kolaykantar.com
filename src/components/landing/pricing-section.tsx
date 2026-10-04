@@ -373,6 +373,34 @@ export function PricingSection() {
             </p>
           </div>
         </div>
+
+        {/* Kurumsal Garanti ve Hizmet Taahhüdü */}
+        <div className="mt-8 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+          <div className="p-4 rounded-xl glass-card border border-slate-200 dark:border-slate-800 space-y-1">
+            <span className="text-emerald-600 dark:text-emerald-400 font-black text-xs block uppercase tracking-wider">
+              🛡️ 30 Gün Koşulsuz İade Güvencesi
+            </span>
+            <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-snug">
+              Memnun kalmazsanız ilk 30 gün içinde sorgusuz sualsiz tam ücret iadesi.
+            </p>
+          </div>
+          <div className="p-4 rounded-xl glass-card border border-slate-200 dark:border-slate-800 space-y-1">
+            <span className="text-cyan-600 dark:text-cyan-400 font-black text-xs block uppercase tracking-wider">
+              ⚡ Aynı Gün Uzaktan Devreye Alma
+            </span>
+            <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-snug">
+              30 dakikada uzaktan kurulum ve operatör eğitimi ile aynı gün tartıma başlayın.
+            </p>
+          </div>
+          <div className="p-4 rounded-xl glass-card border border-slate-200 dark:border-slate-800 space-y-1">
+            <span className="text-indigo-600 dark:text-indigo-400 font-black text-xs block uppercase tracking-wider">
+              📄 Resmi Zersoft Sözleşmesi & SLA
+            </span>
+            <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-snug">
+              Kurumsal fatura, yasal veri işleme sözleşmesi ve %99.9 çalışma süresi taahhüdü.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );

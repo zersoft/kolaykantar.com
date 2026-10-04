@@ -65,8 +65,15 @@ export function Footer() {
               <a href="tel:+905555879370" className="hover:text-cyan-300 font-mono font-bold">+90 (555) 587 93 70</a>
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="h-3.5 w-3.5 text-cyan-400 shrink-0" />
-              <a href="mailto:info@zersoft.net" className="hover:text-cyan-300">info@zersoft.net</a>
+              <span className="text-emerald-400 font-bold">💬</span>
+              <a
+                href="https://wa.me/905555879370?text=Merhaba,%20KolayKantar%20ERP%20hakk%C4%B1nda%20bilgi%20ve%20demo%20talep%20ediyorum."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-400 hover:text-emerald-300 font-semibold"
+              >
+                WhatsApp Hızlı Destek
+              </a>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-3.5 w-3.5 text-cyan-400 shrink-0" />
@@ -74,7 +81,7 @@ export function Footer() {
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="h-3.5 w-3.5 text-cyan-400 shrink-0 mt-0.5" />
-              <span>Bursa / Türkiye</span>
+              <span>Nilüfer / Bursa / Türkiye</span>
             </li>
           </ul>
         </div>

@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/landing/hero-section";
+import { CorporateTrustBanner } from "@/components/landing/corporate-trust-banner";
 import { HybridArchitecture } from "@/components/landing/hybrid-architecture";
 import { FeaturesGrid } from "@/components/landing/features-grid";
 import { CustomerPortalShowcase } from "@/components/landing/customer-portal-showcase";
@@ -12,6 +13,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       <HeroSection />
+      <CorporateTrustBanner />
       <HybridArchitecture />
       <FeaturesGrid />
       <CustomerPortalShowcase />
