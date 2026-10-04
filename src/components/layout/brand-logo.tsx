@@ -31,7 +31,7 @@ export function BrandLogo({
 
   const currentSize = sizeMap[size];
 
-  // Geometrik "K" & Akıllı Kantar Monogramı (Zersoft Precision Scale)
+  // Orijinal Mark / İkon Gösterimi (Kesintisiz Otomasyon & Tartım Döngüsü)
   const renderMark = () => (
     <svg
       viewBox="0 0 48 48"
@@ -42,18 +42,14 @@ export function BrandLogo({
       aria-label="KolayKantar Mark"
     >
       <defs>
-        <linearGradient id="brandKGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id="brandLoopG1" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#00f2fe" />
-          <stop offset="100%" stopColor="#0284c7" />
+          <stop offset="50%" stopColor="#0ea5e9" />
+          <stop offset="100%" stopColor="#6366f1" />
         </linearGradient>
-        <linearGradient id="brandKGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#38bdf8" />
-          <stop offset="100%" stopColor="#4f46e5" />
-        </linearGradient>
-        <linearGradient id="brandKBase" x1="0%" y1="0%" x2="100%" y2="0%">
+        <linearGradient id="brandPlatG1" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="#00f2fe" />
-          <stop offset="50%" stopColor="#38bdf8" />
-          <stop offset="100%" stopColor="#0284c7" />
+          <stop offset="100%" stopColor="#0ea5e9" />
         </linearGradient>
       </defs>
 
@@ -63,27 +59,28 @@ export function BrandLogo({
         width="48"
         height="48"
         rx="12"
-        className="fill-slate-900 dark:fill-[#070c15] stroke-sky-500/35"
-        strokeWidth="1.3"
+        className="fill-[#070c15] stroke-sky-500/40"
+        strokeWidth="1.5"
       />
 
-      {/* K Sol Taşıyıcı Sütun (Load-cell Kule) */}
-      <rect x="11.5" y="10" width="4.5" height="26" rx="2.25" fill="url(#brandKGrad1)" />
+      {/* Kesintisiz Otomasyon Döngüsü */}
+      <path
+        d="M17 18 C12 18 9 21.5 9 25 C9 28.5 12 32 17 32 C21.5 32 24 27.5 24 25 C24 22.5 26.5 18 31 18 C36 18 39 21.5 39 25 C39 28.5 36 32 31 32 C26.5 32 24 27.5 24 25"
+        fill="none"
+        stroke="url(#brandLoopG1)"
+        strokeWidth="2.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
 
-      {/* K Üst Kanat (Bulut & Yükselen Veri) */}
-      <path d="M19 23 L32.5 10 L37 10 L23.5 23 Z" fill="url(#brandKGrad1)" />
+      {/* Platform Tabanı & Yük Hücresi Noktaları */}
+      <path d="M11 38 L37 38" stroke="url(#brandPlatG1)" strokeWidth="2.6" strokeLinecap="round" />
+      <circle cx="15" cy="40.5" r="1.2" fill="#38bdf8" />
+      <circle cx="33" cy="40.5" r="1.2" fill="#38bdf8" />
 
-      {/* K Alt Kanat (Ağır Hizmet Platform Kolu) */}
-      <path d="M19 23 L33.5 35.5 L37 35.5 L22.5 23 Z" fill="url(#brandKGrad2)" />
-
-      {/* Zersoft Merkez Hassas Odak Noktası */}
-      <circle cx="20.5" cy="23" r="2.8" fill="#00f2fe" />
-      <circle cx="20.5" cy="23" r="1.1" fill="#ffffff" />
-
-      {/* Kantar Taban Platformu & Yük Sensörleri */}
-      <path d="M9.5 40 L38.5 40" stroke="url(#brandKBase)" strokeWidth="2.4" strokeLinecap="round" />
-      <circle cx="13.5" cy="40" r="1.1" fill="#00f2fe" />
-      <circle cx="34.5" cy="40" r="1.1" fill="#00f2fe" />
+      {/* Zersoft Merkez Odak Noktası */}
+      <circle cx="24" cy="25" r="2.8" fill="#00f2fe" />
+      <circle cx="24" cy="25" r="1.2" fill="#ffffff" />
     </svg>
   );
 
