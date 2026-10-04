@@ -296,18 +296,17 @@ export function PricingSection() {
                     </p>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-[#060c16] border border-slate-800 space-y-1">
+                  <div className="p-4 rounded-2xl bg-[#060c16] border border-slate-800 space-y-1.5">
                     <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">
-                      Tek Seferlik Lisans Bedeli
+                      Kalıcı Lisans Modeli
                     </span>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-4xl font-black font-mono text-white text-gradient-cyan">
-                        24.900
+                      <span className="text-3xl sm:text-4xl font-black font-display text-white text-gradient-cyan">
+                        Teklif İsteyiniz
                       </span>
-                      <span className="text-sm text-slate-300 font-bold">₺ / İstasyon (Tek Seferlik)</span>
                     </div>
                     <p className="text-[11px] text-emerald-400 font-bold pt-1">
-                      ✅ İlk 6 Ay Tüm Sürüm Güncellemeleri & Teknik Destek Ücretsiz
+                      ✅ Saha, istasyon sayısı ve donanım ihtiyaçlarınıza özel fiyatlandırma
                     </p>
                   </div>
 
@@ -315,7 +314,7 @@ export function PricingSection() {
                     href="#demo"
                     className="inline-flex items-center justify-center gap-2 w-full py-4 rounded-xl bg-gradient-to-r from-cyan-400 via-sky-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-xl shadow-sky-500/25 transition-all"
                   >
-                    <span>Ömür Boyu Lisans Satın Al & Teklif İste</span>
+                    <span>Ömür Boyu Lisans İçin Teklif İsteyin</span>
                     <ArrowRight className="h-4 w-4" />
                   </a>
                 </div>
@@ -354,7 +353,7 @@ export function PricingSection() {
                   </ul>
 
                   <div className="pt-3 border-t border-slate-800 text-[11px] text-slate-400 leading-relaxed">
-                    💡 <strong>6. Aydan Sonra Güncelleme Modeli:</strong> 6 ayın sonunda yeni sürümleri ve güncellemeleri almaya devam etmek isterseniz yıllık cüzi bir bakım paketi (3.600 ₺/Yıl) alabilirsiniz. Bakım almasanız dahi elinizdeki sürümü ömür boyu sınırsız kullanabilirsiniz.
+                    💡 <strong>6. Aydan Sonra Güncelleme Modeli:</strong> 6 ayın sonunda yeni sürümleri ve güncellemeleri almaya devam etmek isterseniz yıllık isteğe bağlı bakım/güncelleme paketi tercih edebilirsiniz. Bakım paketi almasanız dahi mevcut sürümünüzü ömür boyu sınırsız ve kesintisiz kullanabilirsiniz.
                   </div>
                 </div>
               </div>
